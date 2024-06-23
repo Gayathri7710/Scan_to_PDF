@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan to PDF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scan to PDF</h1>
+        <input type="file" id="image-file" accept="image/*" multiple>
+        <div class="button-container">
+            <button id="scan-btn">Scan</button>
+            <button id="convert-btn" disabled>Convert to PDF</button>
+        </div>
+        <a id="download-link" class="hidden" download="scanned_document.pdf">Download PDF</a>
+        <div id="image-preview" class="image-preview"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.16.0/dist/pdf-lib.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
